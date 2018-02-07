@@ -45,4 +45,21 @@
             <version>1.51s</version>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.imagej</groupId>
+                <artifactId>imagej-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-jars</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>copy-jars</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
